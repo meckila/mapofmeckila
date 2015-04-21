@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<title>Name Passport</title>
+		<link rel="stylesheet" href="namepassport.css" media="screen and (orientation:portrait)">
+		<link rel="stylesheet" href="namepassport_landscape.css" media="screen and (orientation:landscape)"> 
+		<link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>       
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-webapp-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<script src="namepassport.js"></script>
+	</head>
+
+	<body>
+		<div class="innerbody">
+			<div id="buttondiv">
+			<button onclick="location.href='index.html';">
+				<h1 id="title_color">Map of Meckila</h1>
+			</button>
+			</div>
+			<nav>
+				<a href="about.html">About</a>
+				<a href="hometown.html">Hometown</a>
+				<a href="work.html">Work</a>
+				<a href="play.html">Play</a>
+				
+			</nav>
+				<h2>Play</h2>
+				<img src="images/bunny.jpg" class="page_photo">
+				<p>
+					Outside of classes, I'm a PLTC tutor and the web mistress for Hey, Madeline
+					(Wellesley's Style Publication). I've also taken piano for 12 years and love Impressionist music. 
+					When I happen to have some downtime (which isn't often), I enjoy reading, jazz, piano, cycling, 
+					and DIY projects. Don't even get me started on Pinterest. It's my unhealthy obsession!
+				</p>
+				<p>Use the drop-down menu to find out some facts about me!</p>
+				<select class="body_text" name="critical" onchange="getText(this)">
+					<option value="Select">Select</option>
+					<option value="Birthday">Birthday</option>
+   					<option value="Favorite Candy">Favorite Candy</option>
+   					<option value="Favorite Season">Favorite Season</option>
+   					<option value="Number of Siblings">Number of Siblings</option>      
+				</select>
+				<p id="textDiv">
+				</p>
+				<p>
+					I also plan on being a future frenchie owner. I absolutely <em>adore</em> french bulldogs 
+					(especially Manny the Frenchie).
+					<br>
+					Press play to see him roar below!
+				<div id="video_div">
+					<video id="manny">
+    				<source src="manny_the_frenchie.mp4" type="video/mp4">
+    				Uh oh, your browser does not support the video tag.
+					</video>
+				</div>
+				</p>		
+
+		</div>	
+
+	</body>
+</html>
